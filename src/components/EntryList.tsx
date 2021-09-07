@@ -4,15 +4,14 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Checkbox from "@material-ui/core/Checkbox";
-import AddIcon from "@material-ui/icons/Add";
 import {
   ListItemSecondaryAction,
   IconButton,
   TextField,
 } from "@material-ui/core";
 
+import AddIcon from "@material-ui/icons/Add";
 import DeleteIcon from "@material-ui/icons/Delete";
-import { Input } from "@material-ui/icons";
 
 export default function CheckboxList() {
   const [array, setArray] = React.useState([
@@ -70,7 +69,6 @@ export default function CheckboxList() {
                   inputProps={{ "aria-labelledby": labelId }}
                 />
               </ListItemIcon>
-
               <ListItemText
                 style={{
                   color: item.done ? "lightgray" : "inherit",
