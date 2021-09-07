@@ -72,6 +72,8 @@ export default function CheckboxList() {
               <ListItemText
                 style={{
                   color: item.done ? "lightgray" : "inherit",
+                  maxWidth:"80vw",
+                  overflow:"hidden"
                 }}
                 id={labelId}
                 primary={item.task}
