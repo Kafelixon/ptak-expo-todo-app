@@ -46,6 +46,10 @@ export default function CheckboxList() {
     event?.preventDefault();
   };
 
+  array.sort((a: any, b: any) => a.done - b.done);
+
+  console.log(array.filter((arr: any) => arr.done === true));
+
   return (
     <>
       <List className="List-container">
@@ -72,8 +76,8 @@ export default function CheckboxList() {
               <ListItemText
                 style={{
                   color: item.done ? "lightgray" : "inherit",
-                  maxWidth:"80vw",
-                  overflow:"hidden"
+                  maxWidth: "80vw",
+                  overflow: "hidden",
                 }}
                 id={labelId}
                 primary={item.task}
