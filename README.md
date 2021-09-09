@@ -1,3 +1,9 @@
+Live Preview
+
+Preview the app live on Netlify:
+
+https://stupefied-pare-f37d33.netlify.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
